@@ -38,6 +38,11 @@ syntax on
 " Ignore capital letters during search
 set ignorecase
 
+" Tab Size
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " ##############
 " # Some Plugs #
 " ##############
