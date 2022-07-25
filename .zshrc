@@ -111,5 +111,4 @@ source $ZSH/oh-my-zsh.sh
 alias uppac="sudo pacman -Syyu"
 alias upflat="flatpak update"
 alias blife="upower -i `upower -e | grep 'BAT'`"
-alias ssh_CIP="ssh zo04maro@cip2d0.cip.cs.fau.de"
 
