@@ -1,6 +1,6 @@
-" ##############
-" # Some Plugs #
-" ##############
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plug-Ins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/.vim/plugged')
 
@@ -13,9 +13,9 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-" #####################
-" # Basis Vim Configs #
-" #####################
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible
 filetype off
@@ -30,6 +30,7 @@ set t_Co=256
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tab Size
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -40,7 +41,7 @@ set smarttab                    " Enable smart-tabs
 " Status Line
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-     \ 'colorschime': 'darcula',
+     \ 'colorscheme': 'darcula',
      \ }
 
 set laststatus=2                " Always show statusline
@@ -60,4 +61,21 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI = 1
 let g:NERDTreeWinSize=38
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Split View
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+set splitbelow splitright
+
+" just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" adjusting size
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize +3<CR>
+noremap <silent> <C-Down> :resize -3<CR>
 
